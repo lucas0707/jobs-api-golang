@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    image: golang:1.6.1-alpine
+    volumes:
+      - .:/go/src/jobs-api
+    working_dir: /go/src/jobs-api
+    command: go run main.go
